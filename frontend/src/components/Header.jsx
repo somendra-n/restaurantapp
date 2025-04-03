@@ -25,7 +25,7 @@ function Header() {
 
   useEffect(() => {
     setLoadingBranches(true);
-    fetch("http://localhost:5000/api/branch-collection/getbranchcollection")
+    fetch("https://restaurantapp-backend-od0w.onrender.com/api/branch-collection/getbranchcollection")
       .then((res) => {
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);
