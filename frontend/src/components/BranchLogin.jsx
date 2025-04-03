@@ -14,7 +14,7 @@ function BranchLogin() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://restaurantapp-backend-od0w.onrender.com/api/branchAuth/login', {
+      const response = await axios.post('http://localhost:5000/api/branchAuth/login', {
         branchUsername,
         password,
       });
