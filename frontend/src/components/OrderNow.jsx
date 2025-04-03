@@ -13,7 +13,7 @@ function OrderNow() {
   const [userId, setUserId] = useState("actual_user_id");
 
   useEffect(() => {
-    fetch("https://restaurantapp-backend-od0w.onrender.com/api/getmenuitems")
+    fetch("http://localhost:5000/api/getmenuitems")
       .then((res) => res.json())
       .then((data) => {
         if (Array.isArray(data)) {
