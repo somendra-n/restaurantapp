@@ -26,7 +26,7 @@ function BranchSignup() {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/branchAuth/register', {
+      const response = await axios.post('https://restaurantapp-backend-od0w.onrender.com/api/branchAuth/register', {
         branchUsername,
         phoneNumber,
         location,
