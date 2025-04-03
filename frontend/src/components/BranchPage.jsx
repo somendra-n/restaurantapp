@@ -19,7 +19,7 @@ function BranchPage() {
 
   const fetchMenu = async () => {
     try {
-      const response = await axios.get('https://restaurantapp-backend-od0w.onrender.com/api/menuRoutes/all');
+      const response = await axios.get('http://localhost:5000/api/menuRoutes/all');
       setMenu(response.data);
       setLoading({ menu: false });
     } catch (err) {
