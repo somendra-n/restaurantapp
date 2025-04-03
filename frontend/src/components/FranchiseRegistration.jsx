@@ -22,7 +22,7 @@ function FranchiseRegistration() {
     };
 
     try {
-      const response = await axios.post('http://localhost:5000/api/franchise/register', franchiseData);
+      const response = await axios.post('https://restaurantapp-backend-od0w.onrender.com/api/franchise/register', franchiseData);
       setMessage('Franchise registered successfully');
       console.log(response.data);
     } catch (err) {
