@@ -6,7 +6,7 @@ function Profile() {
   const userId = 'userId_here'; // Replace with the actual user ID (e.g., from auth context)
 
   useEffect(() => {
-    fetch(`http://localhost:5000/api/auth/get-user-orders/${userId}`)
+    fetch(`https://restaurantapp-backend-od0w.onrender.com/api/auth/get-user-orders/${userId}`)
       .then((res) => res.json())
       .then((data) => {
         setUser(data.user);
