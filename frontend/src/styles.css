@@ -237,6 +237,7 @@ header nav a:hover, header nav button:hover {
 }
 
 .welcome-message h1 {
+  text-align: left;
   font-size: 2.5rem;
   color: #ffffff; /* Pure White for Heading */
   margin-bottom: 15px;
