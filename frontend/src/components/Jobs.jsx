@@ -25,7 +25,7 @@ function JobRegistration() {
 
     try {
       const response = await axios.post(
-        "https://restaurantapp-backend-od0w.onrender.com/api/job-registration/submit",
+        "http://localhost:5000/api/job-registration/submit",
         formData
       );
       setMessage(response.data.message);
