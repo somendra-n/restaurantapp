@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 
 app.use(
   session({
-    secret: process.env.SESSION_SECRET || 'place yours key',
+    secret: process.env.SESSION_SECRET || '366ea2dcf9bea5e0681c86b169c892ffce893103cef7fb54930a37cc5dc6fce6',
     resave: false,
     saveUninitialized: false,
     cookie: { secure: process.env.NODE_ENV === 'production' },
